@@ -1,1 +1,3 @@
-This is readme file which conatins information about this project
+This is readme file which contains information about this project.
+
+We have a Blog Project which has blog_post and users as applications.
