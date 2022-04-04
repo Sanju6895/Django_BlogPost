@@ -1,0 +1,1 @@
+This is readme file which conatins information about this project
