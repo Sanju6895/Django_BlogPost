@@ -1,3 +1,12 @@
-This is readme file which contains information about this project.
+# Welcome to BlogMe Django Web application
 
-We have a Blog Project which has blog_post and users as applications.
+This application allows you to create, update and delete posts.
+Create and update user profile. 
+
+Required application packages are metioned in `requirements.txt` 
+Make sure to have Python 3.X upward
+
+Upcoming features:
+-Password Reset
+-Auto refresh
+-UI changes
