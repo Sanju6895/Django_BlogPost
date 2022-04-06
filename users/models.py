@@ -13,8 +13,8 @@ class Profile(models.Model):
         return f'{self.user.username} Profile'
 
     #Overiding function save to make pics smaller in size so they can be loaded faster
-    def save(self):
-        super().save()
+    def save(self, *args, **kwargs):
+        super().save(*args, **kwargs)
 
         img = Image.open(self.image.path)
 
