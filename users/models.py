@@ -13,12 +13,14 @@ class Profile(models.Model):
         return f'{self.user.username} Profile'
 
     #Overiding function save to make pics smaller in size so they can be loaded faster
-    def save(self, *args, **kwargs):
-        super().save(*args, **kwargs)
+    #Commet this code because we are using AWS and if you want to resize pics there
+    #make use of lambda function
+    # def save(self, *args, **kwargs):
+    #     super().save(*args, **kwargs)
 
-        img = Image.open(self.image.path)
+    #     img = Image.open(self.image.path)
 
-        if img.height > 300 and img.width > 300:
-            output_size =  (300,300)
-            img.thumbnail(output_size)
-            img.save(self.image.path)
+    #     if img.height > 300 and img.width > 300:
+    #         output_size =  (300,300)
+    #         img.thumbnail(output_size)
+    #         img.save(self.image.path)
